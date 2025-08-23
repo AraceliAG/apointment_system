@@ -1,1 +1,22 @@
-<h1>LOGIN</h1>
+<header class="header">
+  <h1>CITAS DIGISTALES</h1>
+</header>
+<div class="login-wrapper">
+  <div class="login-container">
+    <form class="login-form" (ngSubmit)="onSubmit()">
+      <h2 class="title">INICIO DE SESIÓN</h2>
+
+      <div class="input-group">
+        <label for="nss">NÚMERO DE SERVICIO SOCIAL</label>
+        <input type="string" id="nss" name="nss" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password">CONTRASEÑA</label>
+        <input type="password" id="password" name="password"  required />
+      </div>
+
+      <button type="submit" class="btn-login">Acceder</button>
+    </form>
+  </div>
+</div>
