@@ -1,4 +1,6 @@
 import { Component, ViewEncapsulation  } from '@angular/core';
+import { User } from '../models/user';
+import { UserService } from '../services/user';
 
 @Component({
   selector: 'app-users',
