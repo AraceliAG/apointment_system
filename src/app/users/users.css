@@ -19,5 +19,72 @@ body {
   z-index: 1000;
 }
 
+.data {
+  margin-top: 90px; /* más espacio por el header */
+  width: 80%;       /* ancho de la tabla */
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse; /* elimina doble borde */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+.data thead {
+  background: linear-gradient(135deg, #030c34, #4382a0);
+  color: white;
+  text-align: left;
+}
+
+.data th {
+  padding: 14px;
+  font-size: 16px;
+}
+
+/* Celdas */
+.data td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Filas alternadas */
+.data tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover */
+.data tbody tr:hover {
+  background-color: #e6f2f8;
+  transition: 0.3s;
+}
+
+
+.btnCrearCita {
+  display: block;           /* Para que pueda centrarse */
+  margin: 20px auto;        /* Auto en los lados lo centra */
+  padding: 12px 24px;
+  background-color: #2F5C7D;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  text-align: center;       /* Asegura que el texto quede centrado */
+}
+
+.btnCrearCita:hover {
+  background-color: #5a8a9e;
+  color: white;
+}
+
+
+
 
 
